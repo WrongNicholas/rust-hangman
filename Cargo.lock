@@ -251,7 +251,6 @@ name = "hangman"
 version = "0.1.0"
 dependencies = [
  "reqwest",
- "serde_json",
  "tokio",
 ]
 
