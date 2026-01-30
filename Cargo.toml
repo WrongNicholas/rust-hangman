@@ -1,8 +1,21 @@
 [package]
-name = "hangman"
-version = "0.1.0"
+name = "woji-hangman"
+version = "1.0.0"
 edition = "2021"
+
+description = "A simple terminal Hangman game written in Rust"
+license = "MIT OR Apache-2.0"
+
+repository = "https://github.com/WrongNicholas/rust-hangman"
+readme = "README.md"
+
+keywords = ["hangman", "game", "tui", "cli"]
+categories = ["command-line-utilities"]
+
+exclude = [
+    "/target",
+]
 
 [dependencies]
 reqwest = { version = "0.12.9", features = ["json"] }
-tokio = { version = "1.0", features = ["full"] }
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
